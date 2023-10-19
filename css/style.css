@@ -174,7 +174,7 @@ li {
 }
 /* info */
 .info {
-  margin-top: 111px;
+  margin: 111px 0 86px;
 }
 .step__inner {
   display: flex;
