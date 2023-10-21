@@ -1,7 +1,7 @@
 const anchors = document.querySelectorAll('a[href*="#"]');
 
-for (let anchor of anchors) {
-  anchor.addEventListener("click", function (e) {
+anchors.forEach(linkNode => {
+  linkNode.addEventListener("click", function (e) {
     e.preventDefault();
 
     const blockID = anchor.getAttribute("href").substr(1);
@@ -11,4 +11,4 @@ for (let anchor of anchors) {
       block: "start",
     });
   });
-}
+})
